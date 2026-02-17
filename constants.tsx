@@ -200,11 +200,13 @@ export const ACHIEVEMENTS: Achievement[] = [
   }
 ];
 
-export const ABOUT_TEXT = `I am a cybersecurity-focused engineer with a strong interest in offensive security, penetration testing, and adversary simulation.
+export const ABOUT_TEXT = `I am a cybersecurity focused engineer with a deep interest in offensive security, penetration testing, and adversary simulation. I am driven by curiosity about how real world attacks unfold and how systems fail under active threat conditions.
 
-My work is driven by understanding how real-world attacks happen—from reconnaissance and exploitation to privilege escalation and post-exploitation—and translating that knowledge into more resilient systems. I actively practice ethical hacking, vulnerability analysis, and security automation while maintaining a solid foundation in networking, Linux, and web security.
+My work centers on understanding the full attack lifecycle from reconnaissance and initial access to privilege escalation and post exploitation and using that knowledge to assess and strengthen system defenses. I actively practice ethical hacking, vulnerability assessment, and security automation, backed by a strong foundation in networking, Linux, and web application security.
 
-Alongside traditional security testing, I explore the application of machine learning in cybersecurity, including anomaly detection, adversarial attacks on AI models, and automated recon workflows. This allows me to approach security problems from both an attacker’s and a defender’s perspective.
+Beyond traditional penetration testing, I explore the intersection of machine learning and cybersecurity. My interests include anomaly detection, adversarial machine learning, AI assisted reconnaissance, and automated attack analysis, allowing me to evaluate security from both an attacker’s and defender’s mindset.
 
-I am seeking cybersecurity and red team internships where I can contribute to real-world assessments, learn from experienced security professionals, and continuously sharpen my offensive skill set.
+I enjoy building hands on projects that simulate real attack scenarios, experiment with emerging security techniques, and translate theory into practical tooling. I am continuously refining my skills through labs, research, and self driven experimentation.
+
+I am seeking cybersecurity and red team internships where I can contribute to real world security assessments, learn from experienced professionals, and grow into a disciplined offensive security practitioner.
 `;
