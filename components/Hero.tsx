@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { FileDown } from 'lucide-react';
 import ThreeCanvas from './ThreeCanvas';
 
 const DecryptText = ({ text, className }: { text: string, className?: string }) => {
@@ -98,18 +99,29 @@ const Hero = () => {
 
               </div>
 
-              {/* Bottom Buttons - Now in normal flow to prevent overlap */}
+              {/* Bottom Buttons - Unified style */}
               <div className="w-full flex flex-col md:flex-row gap-3 md:gap-6 justify-center items-center mt-8 md:mt-12">
                 <a 
                   href="#projects" 
-                  className="group w-full md:w-64 h-12 md:h-14 flex items-center justify-center bg-cyber-green/5 border border-cyber-green text-cyber-green font-mono text-sm md:text-base uppercase tracking-widest font-bold hover:bg-cyber-green hover:text-black transition-all hover:shadow-[0_0_30px_rgba(0,255,65,0.4)]"
+                  className="w-full md:w-64 h-12 md:h-14 flex items-center justify-center bg-cyber-green/5 border border-cyber-green text-cyber-green font-mono text-sm md:text-base uppercase tracking-widest font-bold hover:bg-cyber-green hover:text-black transition-all hover:shadow-[0_0_30px_rgba(0,255,65,0.4)]"
                 >
                   View Projects
                 </a>
                 
                 <a 
+                  href="/assets/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Suyash_Gargote_Resume.pdf"
+                  className="w-full md:w-64 h-12 md:h-14 flex items-center justify-center gap-2 bg-cyber-green/5 border border-cyber-green text-cyber-green font-mono text-sm md:text-base uppercase tracking-widest font-bold hover:bg-cyber-green hover:text-black transition-all hover:shadow-[0_0_30px_rgba(0,255,65,0.4)]"
+                >
+                  <FileDown size={16} />
+                  Download Resume
+                </a>
+
+                <a 
                   href="#contact"
-                  className="w-full md:w-64 h-12 md:h-14 flex items-center justify-center bg-transparent border border-gray-700 text-gray-300 font-mono text-sm md:text-base uppercase tracking-widest hover:border-cyber-cyan hover:text-cyber-cyan transition-all hover:shadow-[0_0_30px_rgba(0,243,255,0.2)]"
+                  className="w-full md:w-64 h-12 md:h-14 flex items-center justify-center bg-cyber-green/5 border border-cyber-green text-cyber-green font-mono text-sm md:text-base uppercase tracking-widest font-bold hover:bg-cyber-green hover:text-black transition-all hover:shadow-[0_0_30px_rgba(0,255,65,0.4)]"
                 >
                   Contact Me
                 </a>

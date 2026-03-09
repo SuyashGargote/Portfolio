@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Terminal } from 'lucide-react';
+import { Menu, X, Terminal, FileText } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex gap-8 items-center">
           {navLinks.map((link) => (
             <a 
               key={link.name} 
@@ -61,6 +61,16 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
+          {/* Resume Button */}
+          <a
+            href="/assets/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-1.5 border border-cyber-cyan text-cyber-cyan font-mono text-xs uppercase tracking-widest hover:bg-cyber-cyan hover:text-black transition-all hover:shadow-[0_0_15px_rgba(0,243,255,0.4)]"
+          >
+            <FileText size={12} />
+            Resume
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -88,6 +98,16 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
+            {/* Mobile Resume Link */}
+            <a
+              href="/assets/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 p-4 text-xs font-mono text-cyber-cyan hover:bg-black/50 border-l-2 border-transparent hover:border-cyber-cyan transition-all"
+            >
+              <FileText size={12} />
+              // RESUME
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
