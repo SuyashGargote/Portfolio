@@ -107,7 +107,7 @@ export const PROJECTS: Project[] = [
     tags: ["TensorFlow", "NLP", "Python"],
     image: "assets/ai-hunter.png",
     category: "Security",
-    githubUrl: "https://github.com"
+    githubUrl: "https://github.com/SuyashGargote/ai-vulnerability-hunter"
   },
   {
     id: 3,
